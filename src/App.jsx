@@ -26,7 +26,9 @@ const App = () => {
 
             <div className="flex flex-col justify-center items-center my-3">
               {List.map(({ href, title, img }) => (
-                <div
+                <a
+                  href={href}
+                  target="_blank"
                   className="group cursor-pointer grid grid-cols-2 justify-evenly gap-x-2 items-start w-[300px]  py-2 px-10 bg-grey rounded-lg mb-5 hover:bg-primary duration-100:"
                   key={href}
                 >
@@ -38,11 +40,9 @@ const App = () => {
                     className="group-hover:text-offBlack list-none text-sm uppercase  items-stretch font-semibold text-white group-[hover:text-offblack]"
                     key={href}
                   >
-                    <a href={href} target="_blank">
-                      {title}
-                    </a>
+                    {title}
                   </li>
-                </div>
+                </a>
               ))}
             </div>
           </div>
