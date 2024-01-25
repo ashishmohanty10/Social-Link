@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <div className="container h-screen w-full flex justify-center items-center">
-        <div className="bg-darkGrey w-[375px] h-[600px] rounded-lg">
+        <div className="bg-darkGrey w-[375px] h-[550px] rounded-lg">
           <div className="flex flex-col justify-start items-center">
             <div className="flex justify-center items-center mt-5 mb-2 w-[100px] overflow-hidden rounded-full object-center">
               <img src={Profile} alt="" className="w-[200px]" />
